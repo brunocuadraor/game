@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Frogger</title>
+
+    <!-- Import map para que GLTFLoader pueda resolver el módulo "three" en r128. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <div id="uiOverlay" class="hidden">
+        <div id="endCard" class="end-card">
+          <p id="endKicker">Reverse Frogger</p>
+          <h1 id="endTitle">VICTORIA</h1>
+          <p id="endMessage">Has atropellado a la rana.</p>
+          <button id="restartButton" type="button">Reiniciar</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
