@@ -19,6 +19,15 @@
   </head>
   <body>
     <div id="gameContainer">
+      <div id="scoreHud" class="score-hud" aria-live="polite">
+        <span>RANAS ATROPELLADAS</span>
+        <strong id="scoreValue">0</strong>
+      </div>
+
+      <div id="controlsHint" class="controls-hint">
+        <strong>W/S</strong> acelerar y frenar · <strong>A/D</strong> girar · <strong>R</strong> reiniciar
+      </div>
+
       <div id="uiOverlay" class="hidden">
         <div id="endCard" class="end-card">
           <p id="endKicker">Reverse Frogger</p>
@@ -29,6 +38,6 @@
       </div>
     </div>
 
-    <script type="module" src="game.js"></script>
+    <script type="module" src="game.js?v=arcade-landscape-20260612"></script>
   </body>
 </html>
